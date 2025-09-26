@@ -1,10 +1,22 @@
-body {
-    background-color: white;
-    color: black;
+:root {
+  /* Fondo */
+  --color-bg: #FFFFFF;
+
+  /* Texto */
+  --color-text-primary: #1F2937;
+  --color-text-secondary: #4B5563;
+
+  /* Acentos */
+  --color-primary: #F59E0B;
+  --color-primary-hover: #D97706;
+
+  /* Extras */
+  --color-border: #E5E7EB;
+  --color-card-bg: #FFFFFF;
 }
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: white;
-        color: black;
-    }
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: 'Poppins', sans-serif;
 }
