@@ -42,56 +42,46 @@
 
     <main>
         <!-- hero -->
-        <section class="hero">
+        <section class="hero" id="home" itemscope itemtype="http://schema.org/Person">
             <div class="hero50">
-                <img src="./public/others/imgs/user-icon.png" alt="foto perfil de Victor Hugo Huallpa Huahuacondori">
+                <img src="./public/others/imgs/user-icon.png" alt="Foto de perfil de Víctor Hugo Huallpa, Ingeniero de Software">
             </div>
             <div class="hero50">
                 <div class="text80">
-                    <p>HOLA SOY <h1>VICTOR HUGO</h1> ->  VECH</p>
-                    <P>Desarrollador Web & Creador de Juegos con Visión de Ingeniería</P>
+                    <p>HOLA SOY</p>
+                    <h1 itemprop="name">VÍCTOR HUGO HUALLPA H.</h1> 
+                    <h2 itemprop="jobTitle">Desarrollador Web Full Stack & Creador de Juegos con Visión de Ingeniería</h2> 
                     <div class="recta"></div>
-                    <p>"Estudiante de Ingeniería de Software y sistemas en la UNAJ y egresado de una carrera técnica en
-                        Software de SENATI. Me dedico a dar vida a aplicaciones web robustas y funcionales, además de 
-                        desarrollar la lógica de juegos inmersivos. Mi código combina laarquitectura de software con 
-                        la creatividad. Mira mis proyectos (Web y Juegos) para ver el potencial que aporto a cada 
-                        desafío. Listo para mi primer proyecto real."</p>
+                    <p itemprop="description">"Estudiante de Ingeniería de Software y sistemas en la UNJ y egresado de una carrera técnica en Software de SENATI. Me dedico a dar vida a aplicaciones web robustas y funcionales, además de desarrollar la lógica de juegos inmersivos. Mi código combina la arquitectura de software con la creatividad. Mira mis proyectos (Web y Juegos) para ver el potencial que aporto a cada desafío. Listo para mi primer proyecto real."</p>
                 </div>
-                <div class="text20">
-                    <div class="redes">
-                        <img src="" alt="git hub">
-                        <img src="" alt="linkedin">
-                    </div>
-                    <a href="#">Contacteme</a>
                 </div>
-            </div>
         </section>
 
         <!-- Proyectos -->
-        <section class="proyectos">
-            <h2>Proyectos:</h2>
+        <section class="proyectos" id="proyectos">
+            <h2>Proyectos Destacados de Desarrollo Web y Creación de Videojuegos</h2>
             <div class="carusel proyectos">
                 <div class="flecha atras"></div>
 
+                <div class="caja proyecto30" itemscope itemtype="http://schema.org/SoftwareApplication">
+                    <img src="" alt="Captura de Landing Page responsive con HTML y CSS" itemprop="image">
+                    <h3 itemprop="name">Landing Page de Portafolio (HTML/CSS/JS Puro)</h3>
+                    <p itemprop="description">Mi carta de presentación en línea. Un proyecto desarrollado desde cero utilizando HTML, CSS y JavaScript "puro". Fue clave para dominar la estructura, el estilo y la interactividad básica de la web, garantizando el control total sobre cada línea de código.</p>
+                    <a href="#" itemprop="url">Ver Proyecto</a>
+                </div>
+
                 <div class="caja proyecto30">
-                    <img src="" alt="foto landing page">
-                    <h3>Landing Page (Primer Desarrollo Web)</h3>
-                    <p>Mi carta de presentación en línea. Un proyecto sarrollado desde cero utilizando HTML, CSS y JavaScript "puro". Fue clave para dominar la estructura, el estilo y la interactividad básica dela web, garantizando el control total sobre cada línea de código.</p>
-                    <a href="#">Ver...</a>
+                    <img src="" alt="Captura de sistema de gestión de tareas desarrollado con Laravel">
+                    <h3>Sistema de Gestión de Tareas (Laravel y MySQL)</h3>
+                    <p>Proyecto **Full Stack** enfocado en la administración de tareas y usuarios. Desarrollado con el *framework* **Laravel** (PHP) para el Backend y **MySQL** como base de datos, aplicando el patrón MVC para una arquitectura escalable.</p>
+                    <a href="#">Ver Proyecto</a>
                 </div>
 
-                                <div class="caja proyecto30">
-                    <img src="" alt="foto landing page">
-                    <h3>Landing Page (Primer Desarrollo Web)</h3>
-                    <p>Mi carta de presentación en línea. Un proyecto sarrollado desde cero utilizando HTML, CSS y JavaScript "puro". Fue clave para dominar la estructura, el estilo y la interactividad básica dela web, garantizando el control total sobre cada línea de código.</p>
-                    <a href="#">Ver...</a>
-                </div>
-
-                                <div class="caja proyecto30">
-                    <img src="" alt="foto landing page">
-                    <h3>Landing Page (Primer Desarrollo Web)</h3>
-                    <p>Mi carta de presentación en línea. Un proyecto sarrollado desde cero utilizando HTML, CSS y JavaScript "puro". Fue clave para dominar la estructura, el estilo y la interactividad básica dela web, garantizando el control total sobre cada línea de código.</p>
-                    <a href="#">Ver...</a>
+                <div class="caja proyecto30">
+                    <img src="" alt="Captura de pantalla de un juego 2D usando Pygame">
+                    <h3>Prototipo de Juego 2D (Python y Pygame)</h3>
+                    <p>Exploración de la **lógica de juegos** y físicas básicas. Desarrollado en **Python** utilizando la librería **Pygame**. Demuestra mi capacidad para aplicar algoritmos complejos en entornos no web.</p>
+                    <a href="#">Ver Código</a>
                 </div>
 
                 <div class="flecha adelante"></div>
@@ -99,25 +89,23 @@
         </section>
 
         <!-- SOBRE MI -->
-        <section class="sombre-mi">
-            <h2>Sobre mi:</h2>
+        <section class="sobre-mi" id="sobre-mi">
+            <h2>Sobre Mí: Ingeniero de Software en Formación</h2>
             <p><strong>Mi trayectoria:</strong> "Soy Víctor Hugo Huallpa Huahuacondori (VECH), un desarrollador impulsado por la idea de construir y dar vida a productos digitales. Desde el principio, mi objetivo ha sido crear código que no solo funcione, sino que ofrezca una experiencia de usuario memorable. Mi pasión se divide en dos mundos: la arquitectura web robusta y la lógica inmersiva de los videojuegos."</p>
 
             <div class="formacion">
-                <!-- formacion tecnica -->
                 <div class="tecnica">
-                    <img src="" alt="Foramcion SENATI">
-                    <h3>Formación Técnica</h3>
-                    <p>"Completé mi carrera técnica en Ingeniería de Software, una etapa que me proporcionó una base sólida en la planificación, diseño de sistemas y buenas prácticas de codificación. Esto me permite abordar cualquier proyecto con visión a largo plazo."</p>
+                    <img src="" alt="Logo de SENATI, Formación Técnica en Software">
+                    <h3>Formación Técnica (SENATI)</h3>
+                    <p>"Completé mi carrera técnica en **Ingeniería de Software**, una etapa que me proporcionó una base sólida en la planificación, **diseño de sistemas** y buenas prácticas de codificación. Esto me permite abordar cualquier proyecto con visión a largo plazo."</p>
                 </div>
-                <!-- foramcion profecional -->
                 <div class="universitaria">
-                    <img src="" alt="Foramcion UNIVERSITARIA UNAJ">
-                    <h3>Formación Actual</h3>
-                    <p>"Actualmente, estoy potenciando y profundizando mis conocimientos como estudiante en la Universidad Nacional de Juliaca (UNAJ), una etapa que complementa mi experiencia técnica con un enfoque ingenieril más amplio y teórico."</p>
+                    <img src="" alt="Logo de UNAJ, Formación Universitaria en Ingeniería de Software y Sistemas">
+                    <h3>Formación Actual (UNAJ)</h3>
+                    <p>"Actualmente, estoy potenciando y profundizando mis conocimientos como estudiante en la Universidad Nacional de Juliaca (UNAJ), una etapa que complementa mi experiencia técnica con un **enfoque ingenieril más amplio** y teórico."</p>
                 </div>
             </div>
-            <p>"Busco aplicar esta versatilidad para crear soluciones completas: puedo construir el sitio web de un juego, la herramienta de administración (dashboard) y la lógica interna del juego."</p>
+            <p>"Busco aplicar esta versatilidad para crear soluciones completas: puedo construir el **sitio web de un juego**, la herramienta de administración (dashboard) y la lógica interna del juego."</p>
         </section>
 
         <!-- habilidades -->
