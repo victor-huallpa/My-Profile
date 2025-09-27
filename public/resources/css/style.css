@@ -1,22 +1,22 @@
 :root {
   /* Fondo */
-  --color-bg: #FFFFFF;
+  --color-bg: #ECEFF4;
 
   /* Texto */
-  --color-text-primary: #1F2937;
-  --color-text-secondary: #4B5563;
+  --color-text-primary: #2E3440;
+  --color-text-secondary: #4C566A;
 
   /* Acentos */
-  --color-primary: #F59E0B;
-  --color-primary-hover: #D97706;
+  --color-primary: #5E81AC;
+  --color-primary-hover: #81A1C1;
 
   /* Extras */
-  --color-border: #E5E7EB;
+  --color-border: #D8DEE9;
   --color-card-bg: #FFFFFF;
 }
 
 body {
   background-color: var(--color-bg);
   color: var(--color-text-primary);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
