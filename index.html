@@ -1,207 +1,307 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="description" content="Desarrollador Front-end en formación, con enfoque en HTML, CSS y JavaScript. Ver mis proyectos y habilidades en maquetación responsiva.">
-    
-    <meta name="keywords" content="Desarrollador Web, Front-end, HTML, CSS, JavaScript, Portafolio, Maquetación Responsiva">
-    
-    <link rel="canonical" href="[TU URL COMPLETA, ej: https://www.victor-dev.com]">
-    
+    <meta name="description"
+        content="Desarrollador Front-end en formación, con enfoque en HTML, CSS y JavaScript. Ver mis proyectos y habilidades en maquetación responsiva.">
+    <meta name="keywords"
+        content="Desarrollador Web, Front-end, HTML, CSS, JavaScript, Portafolio, Maquetación Responsiva">
+    <!-- <link rel="canonical" href="[TU URL COMPLETA]"> -->
+
     <link rel="icon" type="image/png" href="./public/resources/imgs/logo.png">
-    
+
     <title>VICTOR | Desarrollador Front-end | Portafolio Web</title>
 
-    <link rel="stylesheet" href="./public/resources/css/style.css">
-    
-</head>
-<body>
-    <header>
-        <div class="header">
-            <a href="#">
-                <img src="./public/resources/imgs/logo.png" alt="Logo">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700&display=swap"
+        rel="stylesheet">
 
+    <link rel="stylesheet" href="./public/resources/css/style.css">
+    <script src="./public/resources/js/script.js" defer></script>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="./public/resources/imgs/logo.png" alt="Logo Victor">
+                <span>VECH</span>
             </a>
-            <nav class="nav-list">
-                <ul class="list-ul">
-                    <li class="link-li"><a href="#">Home</a></li>
-                    <li class="link-li"><a href="#">Proyectos</a></li>
-                    <li class="link-li"><a href="#">Sobre mi</a></li>
-                    <li class="link-li"><a href="#">habilidades</a></li>
-                    <!-- <li class="link-li"><a href="./index.html">Blog</a></li> -->
-                    <li class="link-li"><a href="#">Contacto</a></li>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                    <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
                 </ul>
-            </nav>
-            <section class="tema">
-                <div class="content-tema">
-                    <div class="balck">
-                        <img src="./public/resources/imgs/modo/luna-modo-oscuro.png" alt="icono de luna">
-                    </div>
-                    <div class="white">
-                        <img src="./public/resources/imgs/modo/sol-modo-claro.png" alt="icono de sol">
-                    </div>
+                <div class="nav-close" id="nav-close">
+                    <i class="bx bx-x"></i> <!-- Placeholder for icon -->
                 </div>
-            </section>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                    <img src="./public/resources/imgs/modo/luna-modo-oscuro.png" alt="Modo Oscuro"
+                        class="theme-icon dark-icon">
+                    <img src="./public/resources/imgs/modo/sol-modo-claro.png" alt="Modo Claro"
+                        class="theme-icon light-icon" style="display: none;">
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
-        <!-- hero -->
-        <section class="hero" id="home" itemscope itemtype="http://schema.org/Person">
-            <div class="hero50 foto">
-                <img src="./public/resources/photos/perfil.png" alt="Foto de perfil de Víctor Hugo Huallpa, Ingeniero de Software">
-            </div>
-            <div class="hero50 descripcion">
-                <div class="text80">
-                    <p class="uno">HOLA SOY</p>
-                    <div class="name">
-                         <h1 itemprop="name">VICTOR HUGO HUALLPA H. </h1> 
-                        <p> 🡢 <strong>VECH</strong></p>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="hero-greeting">HOLA, SOY</p>
+                    <h1 class="hero-title">VICTOR HUGO HUALLPA H.</h1>
+                    <h2 class="hero-subtitle">Desarrollador Web Full Stack & <br>Creador de Juegos</h2>
+                    <p class="hero-description">
+                        Estudiante de Ingeniería de Software y Sistemas. Combino la arquitectura de software robusta con
+                        la creatividad de los videojuegos. Listo para dar vida a tu próximo proyecto digital.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contacto" class="btn btn-primary">Contáctame</a>
+                        <a href="#proyectos" class="btn btn-secondary">Ver Proyectos</a>
                     </div>
-                   
-                    <h2 itemprop="jobTitle">Desarrollador Web Full Stack & Creador de Juegos con Visión de Ingeniería</h2> 
-                    <div class="recta"></div>
-                    <p itemprop="description">"Estudiante de Ingeniería de Software y sistemas en la UNJ y egresado de una carrera técnica en Software de SENATI. Me dedico a dar vida a aplicaciones web robustas y funcionales, además de desarrollar la lógica de juegos inmersivos. Mi código combina la arquitectura de software con la creatividad. Mira mis proyectos (Web y Juegos) para ver el potencial que aporto a cada desafío. Listo para mi primer proyecto real."</p>
-                </div>
-                <div class="enlaces">
-                    <div class="logos">
-                        <a href="#"><img src="./public/resources/imgs/redes/github-icon.png" alt="git hub"></a>
-                        <a href="#"><img src="./public/resources/imgs/redes/x.png" alt="x"></a>
+                    <div class="hero-socials">
+                        <a href="#" target="_blank" aria-label="GitHub"><img
+                                src="./public/resources/imgs/redes/github-icon.png" alt="GitHub"></a>
+                        <a href="#" target="_blank" aria-label="X (Twitter)"><img
+                                src="./public/resources/imgs/redes/x.png" alt="X"></a>
+                        <a href="#" target="_blank" aria-label="LinkedIn"><img
+                                src="./public/resources/imgs/redes/linkedin-icon.png" alt="LinkedIn"></a>
                     </div>
-                    <a href="#">Contactame -></a>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="./public/resources/photos/perfil.png" alt="Víctor Hugo Huallpa">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Proyectos -->
-        <section class="proyectos" id="proyectos">
-            <h2>Proyectos Destacados de Desarrollo Web y Creación de Videojuegos</h2>
-            <div class="carusel proyectos">
-                <div class="flecha atras"></div>
+        <!-- Proyectos Section -->
+        <section class="section projects" id="proyectos">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <p class="section-subtitle">Desarrollo Web y Videojuegos</p>
 
-                <div class="caja proyecto30" itemscope itemtype="http://schema.org/SoftwareApplication">
-                    <img src="./public/resources/photos/landing.webp" alt="Captura de Landing Page responsive con HTML y CSS" itemprop="image">
-                    <h3 itemprop="name">Landing Page de Portafolio (HTML/CSS/JS Puro)</h3>
-                    <p itemprop="description">Mi carta de presentación en línea. Un proyecto desarrollado desde cero utilizando HTML, CSS y JavaScript "puro". Fue clave para dominar la estructura, el estilo y la interactividad básica de la web, garantizando el control total sobre cada línea de código.</p>
-                    <a href="#" itemprop="url">Ver Proyecto</a>
-                </div>
+            <div class="projects-container">
+                <!-- Proyecto 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./public/resources/photos/landing.webp" alt="Landing Page Portafolio">
+                    </div>
+                    <div class="project-content">
+                        <h3>Landing Page de Portafolio</h3>
+                        <p class="project-tech">HTML • CSS • JS Puro</p>
+                        <p class="project-desc">Mi carta de presentación en línea. Desarrollado desde cero para dominar
+                            la estructura y estilos web sin frameworks.</p>
+                        <a href="#" class="btn-link">Ver Proyecto <span class="arrow">→</span></a>
+                    </div>
+                </article>
 
-                <div class="caja proyecto30">
-                    <img src="./public/resources/photos/juegos2.jpg" alt="Captura de sistema de gestión de tareas desarrollado con Laravel">
-                    <h3>Sistema de Gestión de Tareas (Laravel y MySQL)</h3>
-                    <p>Proyecto **Full Stack** enfocado en la administración de tareas y usuarios. Desarrollado con el *framework* **Laravel** (PHP) para el Backend y **MySQL** como base de datos, aplicando el patrón MVC para una arquitectura escalable.</p>
-                    <a href="#">Ver Proyecto</a>
-                </div>
+                <!-- Proyecto 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./public/resources/photos/juegos2.jpg" alt="Sistema de Gestión">
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema de Gestión de Tareas</h3>
+                        <p class="project-tech">Laravel • MySQL • PHP</p>
+                        <p class="project-desc">Plataforma Full Stack para administración de tareas y usuarios,
+                            aplicando arquitectura MVC escalable.</p>
+                        <a href="#" class="btn-link">Ver Proyecto <span class="arrow">→</span></a>
+                    </div>
+                </article>
 
-                <div class="caja proyecto30">
-                    <img src="./public/resources/photos/juegos.jpg" alt="Captura de pantalla de un juego 2D usando Pygame">
-                    <h3>Prototipo de Juego 2D (Python y Pygame)</h3>
-                    <p>Exploración de la **lógica de juegos** y físicas básicas. Desarrollado en **Python** utilizando la librería **Pygame**. Demuestra mi capacidad para aplicar algoritmos complejos en entornos no web.</p>
-                    <a href="#">Ver Código</a>
-                </div>
-
-                <div class="flecha adelante"></div>
+                <!-- Proyecto 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./public/resources/photos/juegos.jpg" alt="Juego 2D">
+                    </div>
+                    <div class="project-content">
+                        <h3>Prototipo de Juego 2D</h3>
+                        <p class="project-tech">Python • Pygame</p>
+                        <p class="project-desc">Exploración de lógica de juegos y físicas. Algoritmos complejos
+                            aplicados en un entorno interactivo.</p>
+                        <a href="#" class="btn-link">Ver Código <span class="arrow">→</span></a>
+                    </div>
+                </article>
             </div>
         </section>
 
-        <!-- SOBRE MI -->
-        <section class="sobre-mi" id="sobre-mi">
-            <h2>Sobre Mí: Ingeniero de Software en Formación</h2>
-            <p><strong>Mi trayectoria:</strong> "Soy Víctor Hugo Huallpa Huahuacondori (VECH), un desarrollador impulsado por la idea de construir y dar vida a productos digitales. Desde el principio, mi objetivo ha sido crear código que no solo funcione, sino que ofrezca una experiencia de usuario memorable. Mi pasión se divide en dos mundos: la arquitectura web robusta y la lógica inmersiva de los videojuegos."</p>
+        <!-- Sobre Mí Section -->
+        <section class="section about" id="sobre-mi">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>
+                        Soy <strong>Víctor Hugo Huallpa (VECH)</strong>, un desarrollador apasionado por construir
+                        productos digitales que impacten. Mi enfoque combina la precisión de la ingeniería con la
+                        creatividad del diseño interactivo.
+                    </p>
+                    <p>
+                        Mi objetivo es crear código que no solo funcione, sino que ofrezca experiencias memorables. Me
+                        muevo con fluidez entre el desarrollo web robusto y la lógica inmersiva de los videojuegos.
+                    </p>
+                </div>
 
-            <div class="formacion">
-                <div class="tecnica">
-                    <img src="./public/resources/photos/senati.jpg" alt="Logo de SENATI, Formación Técnica en Software">
-                    <h3>Formación Técnica (SENATI)</h3>
-                    <p>"Completé mi carrera técnica en **Ingeniería de Software**, una etapa que me proporcionó una base sólida en la planificación, **diseño de sistemas** y buenas prácticas de codificación. Esto me permite abordar cualquier proyecto con visión a largo plazo."</p>
-                </div>
-                <div class="universitaria">
-                    <img src="./public/resources/photos/unaj.jpeg" alt="Logo de UNAJ, Formación Universitaria en Ingeniería de Software y Sistemas">
-                    <h3>Formación Actual (UNAJ)</h3>
-                    <p>"Actualmente, estoy potenciando y profundizando mis conocimientos como estudiante en la Universidad Nacional de Juliaca (UNAJ), una etapa que complementa mi experiencia técnica con un **enfoque ingenieril más amplio** y teórico."</p>
-                </div>
-            </div>
-            <p>"Busco aplicar esta versatilidad para crear soluciones completas: puedo construir el **sitio web de un juego**, la herramienta de administración (dashboard) y la lógica interna del juego."</p>
-        </section>
-
-        <!-- habilidades -->
-        <section class="habilidades">
-            <h2>Habilidades</h2>
-            <!-- hard skills -->
-            <div class="skills hard">
-                <h3>Mi kit de herramientas (Hard Skills)</h3>
-                <div class="img-hard-skills">
-                    <img src="./public/resources/imgs/tecnologias/html-5-logo.png" alt="IMAGEN HTML">
-                    <img src="./public/resources/imgs/tecnologias/css-3-logo.png" alt="IMAGEN CSS">
-                    <img src="./public/resources/imgs/tecnologias/javascript-logo.png" alt="IMAGEN JAVASCRIPT">
-                    <img src="./public/resources/imgs/tecnologias/php-logo.png" alt="imagen php">
-                    <img src="./public/resources/imgs/tecnologias/python.png" alt="python">
-                    <img src="./public/resources/imgs/tecnologias/mysql-logo.png" alt="IAMGEN MYSQL">
-                    <img src="./public/resources/imgs/tecnologias/laravel-logo.png" alt="IMAGEN LARAVEL">
-                    <img src="./public/resources/imgs/tecnologias/flask.png" alt="flask">
-                    <img src="./public/resources/imgs/tecnologias/bootstrap-logo.png" alt="IAMGEN BOOTSTRAP">
-                    <img src="./public/resources/imgs/tecnologias/tailwind-logo.png" alt="IMAGEN TAILWIN">
-                    <img src="./public/resources/imgs/tecnologias/c.png" alt="c">
-                    <img src="./public/resources/imgs/tecnologias/cpp.png" alt="c++">
-                    <img src="./public/resources/imgs/tecnologias/Csharp.png" alt="c#">
-                    <img src="./public/resources/imgs/tecnologias/pygame.png" alt="pygame">
-                    <img src="./public/resources/imgs/tecnologias/unity.png" alt="unity">
-                </div>
-            </div>
-            <!-- soft skilld -->
-            <div class="skills soft">
-                <h3>Habilidades Blandas (Soft Skills)</h3>
-                <div class="soft-skill">
-                    <img src="./public/resources/imgs/habilidades/rompezabeza.png" alt="Un rompecabeza armandoce">
-                    <p>Resolucion de problemas</p>
-                </div>
-                <div class="soft-skill">
-                    <img src="./public/resources/imgs/habilidades/conocimiento.png" alt="un cerebro sobre libros">
-                    <p>Aprendizaje Continuo</p>
-                </div>
-                <div class="soft-skill">
-                    <img src="./public/resources/imgs/habilidades/servicio-al-cliente.png" alt="persona con una laptop levantando el pulgar arriba">
-                    <p>Trabajo Autodirigido</p>
-                </div>
-                <div class="soft-skill">
-                    <img src="./public/resources/imgs/habilidades/megafono.png" alt="Comunicacion Efectiva">
-                    <p>Comunicacion Efectiva</p>
-                </div>
-                <div class="soft-skill">
-                    <img src="./public/resources/imgs/habilidades/lista-de-verificacion.png" alt="una lista de verificacion">
-                    <p>organizacion</p>
-                </div>
-                <div class="soft-skill">
-                    <img src="./public/resources/imgs/habilidades/grupo.png" alt="un ciruclo de personas y un check en el centro">
-                    <p>Trabajo en equipo</p>
-                </div>
-                <div class="soft-skill">
-                        <img src="./public/resources/imgs/banderas/reino-unido-bandera.png" alt="bandera de Reino Unido">
-                        <p>ingles</p>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="edu-icon">
+                            <img src="./public/resources/photos/senati.jpg" alt="SENATI">
+                        </div>
+                        <div class="edu-info">
+                            <h3>Formación Técnica</h3>
+                            <span class="institution">SENATI</span>
+                            <p>Ingeniería de Software. Bases sólidas en planificación y diseño de sistemas.</p>
+                        </div>
+                    </div>
+                    <div class="education-card">
+                        <div class="edu-icon">
+                            <img src="./public/resources/photos/unaj.jpeg" alt="UNAJ">
+                        </div>
+                        <div class="edu-info">
+                            <h3>Formación Universitaria</h3>
+                            <span class="institution">UNAJ</span>
+                            <p>Ingeniería de Software y Sistemas. Profundización teórica y enfoque ingenieril.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- contacto -->
-         <section class="contacto">
-            <h2>Contacto: </h2>
-            <div class="redes-contacto">
-                <img src="./public/resources/imgs/redes/github-icon.png" alt="log de Git Hub">
-                <img src="./public/resources/imgs/redes/linkedin-icon.png" alt="logo de Linkedin">
-                <img src="./public/resources/imgs/redes/gmail-icon.png" alt="logo de Gmail">
+        <!-- Habilidades Section -->
+        <section class="section skills" id="habilidades">
+            <h2 class="section-title">Mis Habilidades</h2>
+
+            <div class="skills-container">
+                <div class="skills-group">
+                    <h3>Hard Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" title="HTML5"><img
+                                src="./public/resources/imgs/tecnologias/html-5-logo.png" alt="HTML"></div>
+                        <div class="skill-item" title="CSS3"><img
+                                src="./public/resources/imgs/tecnologias/css-3-logo.png" alt="CSS"></div>
+                        <div class="skill-item" title="JavaScript"><img
+                                src="./public/resources/imgs/tecnologias/javascript-logo.png" alt="JS"></div>
+                        <div class="skill-item" title="PHP"><img src="./public/resources/imgs/tecnologias/php-logo.png"
+                                alt="PHP"></div>
+                        <div class="skill-item" title="Python"><img src="./public/resources/imgs/tecnologias/python.png"
+                                alt="Python"></div>
+                        <div class="skill-item" title="MySQL"><img
+                                src="./public/resources/imgs/tecnologias/mysql-logo.png" alt="MySQL"></div>
+                        <div class="skill-item" title="Laravel"><img
+                                src="./public/resources/imgs/tecnologias/laravel-logo.png" alt="Laravel"></div>
+                        <div class="skill-item" title="Flask"><img src="./public/resources/imgs/tecnologias/flask.png"
+                                alt="Flask"></div>
+                        <div class="skill-item" title="Bootstrap"><img
+                                src="./public/resources/imgs/tecnologias/bootstrap-logo.png" alt="Bootstrap"></div>
+                        <div class="skill-item" title="Tailwind"><img
+                                src="./public/resources/imgs/tecnologias/tailwind-logo.png" alt="Tailwind"></div>
+                        <div class="skill-item" title="C"><img src="./public/resources/imgs/tecnologias/c.png" alt="C">
+                        </div>
+                        <div class="skill-item" title="C++"><img src="./public/resources/imgs/tecnologias/cpp.png"
+                                alt="C++"></div>
+                        <div class="skill-item" title="C#"><img src="./public/resources/imgs/tecnologias/Csharp.png"
+                                alt="C#"></div>
+                        <div class="skill-item" title="Pygame"><img src="./public/resources/imgs/tecnologias/pygame.png"
+                                alt="Pygame"></div>
+                        <div class="skill-item" title="Unity"><img src="./public/resources/imgs/tecnologias/unity.png"
+                                alt="Unity"></div>
+                    </div>
+                </div>
+
+                <div class="skills-group">
+                    <h3>Soft Skills</h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-card">
+                            <img src="./public/resources/imgs/habilidades/rompezabeza.png" alt="Resolución">
+                            <p>Resolución de Problemas</p>
+                        </div>
+                        <div class="soft-skill-card">
+                            <img src="./public/resources/imgs/habilidades/conocimiento.png" alt="Aprendizaje">
+                            <p>Aprendizaje Continuo</p>
+                        </div>
+                        <div class="soft-skill-card">
+                            <img src="./public/resources/imgs/habilidades/servicio-al-cliente.png" alt="Autodirigido">
+                            <p>Trabajo Autodirigido</p>
+                        </div>
+                        <div class="soft-skill-card">
+                            <img src="./public/resources/imgs/habilidades/megafono.png" alt="Comunicación">
+                            <p>Comunicación Efectiva</p>
+                        </div>
+                        <div class="soft-skill-card">
+                            <img src="./public/resources/imgs/habilidades/lista-de-verificacion.png" alt="Organización">
+                            <p>Organización</p>
+                        </div>
+                        <div class="soft-skill-card">
+                            <img src="./public/resources/imgs/habilidades/grupo.png" alt="Equipo">
+                            <p>Trabajo en Equipo</p>
+                        </div>
+                        <div class="soft-skill-card">
+                            <img src="./public/resources/imgs/banderas/reino-unido-bandera.png" alt="Inglés">
+                            <p>Inglés</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </section>
+        </section>
+
+        <!-- Contacto Section -->
+        <section class="section contact" id="contacto">
+            <h2 class="section-title">Contáctame</h2>
+            <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+
+            <div class="contact-container">
+                <div class="contact-card">
+                    <a href="#" class="contact-link">
+                        <img src="./public/resources/imgs/redes/gmail-icon.png" alt="Email">
+                        <span>Email</span>
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <a href="#" class="contact-link">
+                        <img src="./public/resources/imgs/redes/linkedin-icon.png" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <a href="#" class="contact-link">
+                        <img src="./public/resources/imgs/redes/github-icon.png" alt="GitHub">
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>© 2024 |Victor H. Huallpa H. Todos los derechos reservados.</p>
-        <section>
-            <a href="#"><img src="./public/resources/imgs/redes/youtube-icon.png" alt="logo de youtube"></a>
-            <a href="#"><img src="./public/resources/imgs/redes/facebook.png" alt="facebook"></a>
-            <a href="#"><img src="./public/resources/imgs/redes/instagram.png" alt="instagram"></a>
-            <a href="#"><img src="./public/resources/imgs/redes/tiktok.png" alt="tiktok"></a>
-        </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Victor H. Huallpa H. Todos los derechos reservados.</p>
+            <div class="footer-socials">
+                <a href="#"><img src="./public/resources/imgs/redes/youtube-icon.png" alt="YouTube"></a>
+                <a href="#"><img src="./public/resources/imgs/redes/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="./public/resources/imgs/redes/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="./public/resources/imgs/redes/tiktok.png" alt="TikTok"></a>
+            </div>
+        </div>
     </footer>
 </body>
+
 </html>
