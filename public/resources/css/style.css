@@ -272,9 +272,7 @@ header.scrolled {
     transition: transform var(--transition-fast);
 }
 
-[data-theme="light"] .theme-icon {
-    filter: invert(100%);
-}
+
 
 .nav-toggle,
 .nav-close {
